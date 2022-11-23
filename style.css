@@ -1,0 +1,120 @@
+/* ///入力シート///////////////////////////////////////////////// */
+h1 {
+    text-align: center;
+}
+
+#inputform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grade_containar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+#class_containar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+#studentnumber_containar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+#name_containar {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 40px;
+    margin-left: 25px;
+
+}
+
+
+#contact_containar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+#reason_containar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+#reason_containar input {
+    width: 200px;
+}
+
+#comment_containar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#comment_containar input {
+    width: 300px;
+}
+
+#input_full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#submit_containar {
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+/* ///出力シート///////////////////////////////////////////////// */
+
+table {
+    border-collapse: collapse;
+}
+
+#table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+tr {
+    border: 1px solid #bbb;
+}
+
+th,
+td {
+    border-right: 1px solid #bbb;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+th {
+    background-color: #E2EFDA;
+}
+
+td:not(:first-child) {
+    text-align: right;
+}

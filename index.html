@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>欠席連絡入力シート</title>
+</head>
+
+<body>
+
+    <h1>欠席連絡入力シート</h1>
+    <div id="input">
+        <div id="input_full">
+            <div id="inputform">
+                <div id="grade_containar">
+                    <p>学年</p>
+                    <select id="grade"></select>
+                </div>
+
+                <div id="class_containar">
+                    <p>組</p>
+                    <select id="class"></select>
+                </div>
+
+                <div id="studentnumber_containar">
+                    <p>番号</p>
+                    <select id="studentnumber"></select>
+                </div>
+
+                <div id="name_containar">
+                    <p>氏名</p>
+                    <input type="textarea" id="name"></input>
+                </div>
+
+                <div id="contact_containar">
+                    <p>連絡</p>
+                    <select id="contact"></select>
+                </div>
+
+                <div id="reason_containar">
+                    <p>連絡理由</p>
+                    <input id="reason" type="text" placeholder="理由を書いてください。">
+                </div>
+
+                <div id="comment_containar">
+                    <p>コメント</p>
+                    <input id="comment" type="textarea" placeholder="その他連絡したいことがあればお書きください。">
+                </div>
+            </div>
+            <div id="submit_containar">
+                <button type="button" id="submitbutton">送信</button>
+            </div>
+        </div>
+
+        <!-- ///出力シート//////////////////////////////////////////////////// -->
+
+        <h1>
+            欠席連絡一覧
+        </h1>
+        <div id="table">
+            <table id="student_table">
+                <!-- <thead> -->
+                <!-- <tr>
+                    <th>学年</th>
+                    <th>組</th>
+                    <th>番号</th>
+                    <th>氏名</th>
+                    <th>連絡</th>
+                    <th>連絡理由</th>
+                    <th>コメント</th>
+                </tr> -->
+                <!-- </thead> -->
+                <!-- <tr id="student_info">
+
+                </tr> -->
+
+
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
