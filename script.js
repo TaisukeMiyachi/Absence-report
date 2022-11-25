@@ -34,6 +34,20 @@ const array33 = [
     "メージャー", "ブレア", "ブラウン", "キャメロン", "メイ", "ジョンソン", "トラス"
 ]
 
+let class11 = ""
+
+for (let i = 0; i <= array11.length - 1; i++) {
+    class11 += "{ name:" + array11[i] + "," + "id:" + 101 + (i + 1) + "},";
+}
+
+const class11_id = "[" + class11 + "]"
+
+
+console.log(class11_id)
+console.log(class11_id[0].name)
+
+
+
 $("#class").html("<option>組</option>")
 $("#studentnumber").html("<option>番号</option>")
 
@@ -248,7 +262,6 @@ $("#submitbutton").on("click", function () {
         correct_comment
     ];
 
-
     let output_array = "";
 
     for (let i = 0; i <= data_array.length - 1; i++) {
@@ -265,13 +278,8 @@ $("#submitbutton").on("click", function () {
             const jsondata = localStorage.getItem(i);
             const data = JSON.parse(jsondata);
 
-
             $("#student_table").append("<tr>" + data + "</tr>");
-
         }
-
-
-
     }
 
     $("#grade").val("学年");
@@ -284,28 +292,21 @@ $("#submitbutton").on("click", function () {
 
 });
 
-// if (localStorage.getItem(0)) {
-//     const jsondata = localStorage.getItem(0);
-//     const data = JSON.parse(jsondata);
-//     console.log(data)
-//     $("#student_table").append("<tr></tr>");
-//     $("#student_table").html(data);
-
-// }
+///削除ボタン///////////////////////////////////////////////////
 
 
+$("#clearbutton").on("click", function () {
+    localStorage.clear();
 
+    let elmtTable = document.getElementById('student_table');
+    let tableRows = elmtTable.getElementsByTagName('tr');
+    let rowCount = tableRows.length;
 
+    for (let x = rowCount - 1; x > 0; x--) {
+        elmtTable.removeChild(tableRows[x]);
+    }
 
-///////////////////////////////////////////////////////////////
-// if (localStorage.getItem(0)) {
-//     const jsondata = localStorage.getItem(0);
-//     const data = JSON.parse(jsondata);
-//     $("#student_info").html(data);
-// }
-///出力シート///////////////////////////////////////////////////
-
-
-
+    window.alert("本日の記録を消去します。")
+})
 
 

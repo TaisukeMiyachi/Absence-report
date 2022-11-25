@@ -88,6 +88,12 @@ h1 {
     margin-bottom: 100px;
 }
 
+#submitbutton {
+    width: 80px;
+    height: 40px;
+    font-size: large;
+}
+
 /* ///出力シート///////////////////////////////////////////////// */
 
 table {
@@ -109,12 +115,21 @@ td {
     border-right: 1px solid #bbb;
     padding-left: 1em;
     padding-right: 1em;
+    text-align: center;
 }
 
 th {
     background-color: #E2EFDA;
 }
 
-td:not(:first-child) {
-    text-align: right;
+
+#clear_containar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clearbutton {
+    margin-top: auto;
+    margin-bottom: 20px;
 }
