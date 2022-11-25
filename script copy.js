@@ -17,6 +17,7 @@ $("#grade").html(grade);
 $("#grade").on("change", function () {
     const i_grade = $("#grade").val();
 
+
     if (i_grade === "1") {
         let class_number1 = "<option>組</option>";
 
@@ -126,6 +127,12 @@ $("#grade").on("change", function () {
         }
 
 
+
+
+
+
+
+
     })
 })
 // let student_number = "";
@@ -176,7 +183,6 @@ $("#submitbutton").on("click", function () {
     for (let i = 0; i <= data_array.length - 1; i++) {
         output_array += "<td>" + data_array[i] + "</td>"
     }
-    
     const jsondata = JSON.stringify(output_array);
     localStorage.setItem("parsonal", jsondata);
 
@@ -201,8 +207,4 @@ if (localStorage.getItem("parsonal")) {
     $("#student_info").html(data);
 }
 ///出力シート///////////////////////////////////////////////////
-
-
-
-
 
